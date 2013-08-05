@@ -10,7 +10,7 @@ describe 'displaying movies' do
     it 'should show detail of a movie' do
       get :show, {:id => 1}
       response.should render_template(:show)
-      assigns(:movie).title.should == 'Aladdin'
+      assigns(:movie).title.should == 'Star Wars'
     end
     
     context 'index' do
